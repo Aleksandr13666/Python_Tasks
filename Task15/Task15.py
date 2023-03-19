@@ -18,7 +18,7 @@ n = input('input quantity: ')
 melon_weight = list()
 for i in range(int(n)):
     melon_weight.append(random.randint(1, 10))
-    
+print(melon_weight)    
 min = melon_weight[0]
 max = melon_weight[0]
 
