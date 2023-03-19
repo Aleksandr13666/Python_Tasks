@@ -2,3 +2,11 @@
 # вида 2 k
 # ), не превосходящие числа N.
 # 10 -> 1 2 4 8
+
+n = int(input('Input a number: '))
+m = 1
+while m < n:
+    print(m)
+    m *= 2 
+    
+    
