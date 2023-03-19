@@ -16,3 +16,23 @@
 # диапазоне от –50 до 50
 # Input: 6 -> -20 30 -40 50 10 -10
 # Output: 2
+
+import random
+
+
+day = input('Input days: ')
+temperatureb = list()
+resultTemp = 0
+temp = 0
+
+for i in range(int(day)):
+    temperatureb.append(random.randint(-50, 50))
+print(temperatureb)
+for i in range(int(day)):
+    if(int(temperatureb[i]) > 0):
+        resultTemp = resultTemp +1
+    else:
+        if(resultTemp > temp):
+            temp = resultTemp
+        resultTemp = 0
+print(temp)                
