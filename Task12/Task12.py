@@ -5,3 +5,10 @@
 # произведение P. Помогите Кате отгадать задуманные Петей числа.
 # 4 4 -> 2 2
 # 5 6 -> 2 3
+
+n, m = map(int, input('input summ and input multiplisity with space: ').split())
+
+x = (n - int((n**2 - 4*m)**0.5))//2
+y = (n + int((n**2 - 4*m)**0.5))//2
+
+print(f'first digit',int(x) ,'second digit', int(y))
