@@ -9,15 +9,15 @@
 n = int(input('Input a digit fib: '))
 a = 0
 b = 1
-counter = 1
-while(a <= n):
-    print(a)
+counter = 0
+if n == 0:
+    print(counter)
+else:
+    while(a < n):
+        a, b = b, a + b
+        counter += 1
+        print(a)
     if n == a:
         print(f"digit is on {counter} position")
-        break
-    elif n < a:
-            print("Digit is not exist")
     else:
-        a, b = b, a + b
-        counter += 1        
-        
+        print("-1")
