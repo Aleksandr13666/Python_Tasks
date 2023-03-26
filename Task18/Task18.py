@@ -9,3 +9,16 @@
 # Ввод: 7
 # 1 2 1 8 9 6 5 4 3 4
 # Вывод: 6
+
+import random
+
+n = int(input('input number: '))
+x = int(input('input element: '))
+nums = list()
+for i in range(int(n)):
+    nums.append(random.randint(1, 9))
+print(nums) 
+for i in range (len(nums)):
+    if nums[i] == x - 1:
+        m = nums[i]      
+print(m)
