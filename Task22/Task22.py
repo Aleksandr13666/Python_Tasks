@@ -17,8 +17,5 @@ for i in range(m):
     num_list_second.append(num)
 print(num_list_second)
 
-num_list_third = num_list_one + num_list_second
+num_list_third = sorted(num_list_one.intersection(num_list_second))
 print(num_list_third)
-for i in num_list_third:
-    if num_list_third.count > 1:
-        print(i)
