@@ -5,3 +5,14 @@
 # с предыдущим номером)
 # Input: [0, -1, 5, 2, 3]
 # Output: 2 (-1 < 5, 2 < 3)
+
+import random
+nums = int(input('Input quantity of nums: '))
+array = [random.randint(-10, 10) for _ in range(int(nums))]
+counter = 0
+result_string = ''
+for i in range(len(array)-1):
+    if array[i] > array[i+1]:
+        counter += 1
+        result_string += f'{array[i]} < {array[i+1]}\n'
+print(f'{counter} -> {result_string}')         
