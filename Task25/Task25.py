@@ -14,7 +14,7 @@ result = letters.split(" ")
 print(letters)
 print(letters_dict)
 for i in range(len(letters)):
-    if lettars_dict.get(letters[i]) == None:
+    if letters_dict.get(letters[i]) == None:
         letters_dict[letters[i]] = 0
         result += f"{letters[i]}"
     else:
