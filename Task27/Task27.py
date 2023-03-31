@@ -9,3 +9,15 @@
 # shells on the sea shore I'm sure that the shells are sea
 # shore shells
 # Output: 13
+
+text = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure.So if she sells sea shells on the sea shore I'm sure that the shells are sea shore shells"
+dict_text = {}
+result = 0
+
+split_text = text.lower().split(" ")
+
+for i in range(len(split_text)):
+    if split_text.get(split_text[i]) == None:
+        dict_text[split_text[i]] = 1
+        result += 1
+print(result)        
