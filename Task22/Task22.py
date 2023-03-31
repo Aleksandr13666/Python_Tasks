@@ -16,6 +16,10 @@ for i in range(m):
     num = int(input('Input numbers: '))
     num_list_second.append(num)
 print(num_list_second)
-
-num_list_third = sorted(num_list_one.intersection(num_list_second))
+num_list_third = num_list_one + num_list_second
 print(num_list_third)
+check_list = []
+for i in num_list_third:
+    if num_list_third.count(i) > 1 and i not in check_list:
+        check_list.append(i)
+        print(i)
