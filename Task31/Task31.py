@@ -9,3 +9,13 @@
 # Input: 7
 # Output: 21
 # Задание необходимо решать через рекурсию
+
+def fibonacci(n):
+    if n in [1, 2]:
+        return 1
+    return fibonacci(n-1) + fibonacci(n-2)
+list_1 = []
+for i in range(1, 10):
+    list_1.append(fibonacci(i))
+
+print(list_1)
