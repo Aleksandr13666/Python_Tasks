@@ -10,3 +10,30 @@
 # 3 1 3 4 2 4 12
 # 6
 # 4 15 43 1 15 1 (каждое число вводится с новой строки)
+
+import random
+
+n = int (input ("Введите количество элементов в первом массиве: "))
+list1 = []
+for i in range (n):
+    list1.append (int(random.randint(1, 10)))
+
+m = int (input ("Введите количество элементов во втором массиве: "))
+list2 = []
+for i in range (m):
+    list2.append (int(random.randint(1, 10)))
+
+print(list1)
+print(list2)
+
+# count = 0
+# for i in range (n):
+#     for j in range (m):
+#         if list1[i] == list2[j]:
+#             count += 1
+#     if count == 0:
+#         print(list1[i], end = " ")
+#         count = 0
+# print('\n')
+
+print([i for i in list1 if i not in list2])
