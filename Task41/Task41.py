@@ -12,3 +12,16 @@
 # Вывод: Вывод:
 # 0 2
 # (каждое число вводится с новой строки)
+
+import random
+
+n = int(input('input qantity:'))
+arr = []
+for i in range(n):
+    arr.append(random.randint(1,10))
+print(arr)
+count = 0
+for i in range(n):
+    if arr[i - 2] < arr[i - 1] > arr[i]:
+        count += 1
+print(count)        
