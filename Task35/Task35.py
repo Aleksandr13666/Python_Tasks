@@ -4,4 +4,10 @@
 # Напоминание: Простое число - это число, которое
 # имеет 2 делителя: 1 и n(само число)
 # Input: 5
-# Output: yes
+# Output: ye
+
+def mult(x):
+    if x % 2 == 0:
+        return 'no'
+    return 'yes'
+print(mult(8))
