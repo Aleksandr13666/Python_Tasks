@@ -9,3 +9,13 @@
 
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам  
+
+
+def word(puh):
+    n = puh.lower().split()
+    f = lambda x: sum(1 for i in x if i in 'ауеёиоуэюя')
+    tmp = f(n[0])
+    if all([f(i) == tmp for i in n]):
+        return 'Парам пам-пам'
+    return 'Пам парам'
+print(word('пара-ра-рам рам-пам-папам па-ра-па-да'))
