@@ -9,3 +9,11 @@
 # (даже для ввода и вывода).
 # Input: 2 -> 3 4
 # Output: 4 3
+
+def rev(n):
+    if n > 0:
+        print (n)
+        rev(n-1)
+
+n = int(input('input a num: '))
+rev(n)        
