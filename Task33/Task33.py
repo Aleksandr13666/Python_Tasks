@@ -6,3 +6,9 @@
 # максимальные – на минимальные.
 # Input: 5 -> 1 3 3 3 4
 # Output: 1 3 3 3 1
+
+n = list(map(int, input().split()))
+minimum = min(n)
+maximum = max(n)
+m = list(minimum if i == maximum else i for i in n)
+print(m)
