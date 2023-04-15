@@ -13,3 +13,16 @@
 # print(‘same’)
 # else:
 # print(‘different’)
+
+values = [0, 2, 10, 6]
+
+def same_by(function, input_values):
+    result = list(map(function, input_values))
+    return min(result) == max(result)
+
+print(same_by(lambda x: x % 2, values))
+
+if same_by(lambda x: x % 2, values):
+    print('same')
+else:
+    print('different')
